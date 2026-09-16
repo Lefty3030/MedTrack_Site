@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedTrack &mdash; Privacy &amp; Support</title>
+<meta name="description" content="Privacy policy and support for MedTrack, the private, on-device medication tracker for iPhone and iPad.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F0F6F4">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0C201C">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233FA98F'/%3E%3Cstop offset='1' stop-color='%232E7D6B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cg transform='rotate(-45 50 50)'%3E%3Crect x='30' y='38' width='40' height='24' rx='12' fill='%23fff'/%3E%3Cpath d='M50 38h8a12 12 0 0 1 0 24h-8z' fill='%23BFEBDF'/%3E%3C/g%3E%3C/svg%3E">
+<style>html,body{height:100%;margin:0;background:#F0F6F4;}@media (prefers-color-scheme:dark){html,body{background:#0C201C;}}</style>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#F0F6F4; --surface:#FFFFFF; --ink:#16332C; --muted:#5B726B;
+    --line:#DFECE7; --line-soft:#ECF4F1;
+    --brand:#2E7D6B; --brand-2:#3FA98F; --link:#1E7A6B;
+    --promise-bg:#E7F3EF; --promise-line:#CFE7DF;
+    --red:#D64545; --amber:#F4B02A; --green:#43B65F;
+    --shadow:0 1px 2px rgba(16,51,44,.05), 0 8px 28px rgba(16,51,44,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0C201C; --surface:#12302A; --ink:#E6EFEC; --muted:#9BB4AD;
+      --line:#1E4239; --line-soft:#173731;
+      --brand:#5FC0AC; --brand-2:#7FD6C2; --link:#62C4B2;
+      --promise-bg:#12352E; --promise-line:#1E4A40;
+      --red:#E56A6A; --amber:#F4B02A; --green:#5CC177;
+      --shadow:0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F0F6F4; --surface:#FFFFFF; --ink:#16332C; --muted:#5B726B;
+    --line:#DFECE7; --line-soft:#ECF4F1; --brand:#2E7D6B; --brand-2:#3FA98F;
+    --link:#1E7A6B; --promise-bg:#E7F3EF; --promise-line:#CFE7DF;
+    --red:#D64545; --amber:#F4B02A; --green:#43B65F;
+    --shadow:0 1px 2px rgba(16,51,44,.05), 0 8px 28px rgba(16,51,44,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0C201C; --surface:#12302A; --ink:#E6EFEC; --muted:#9BB4AD;
+    --line:#1E4239; --line-soft:#173731; --brand:#5FC0AC; --brand-2:#7FD6C2;
+    --link:#62C4B2; --promise-bg:#12352E; --promise-line:#1E4A40;
+    --red:#E56A6A; --amber:#F4B02A; --green:#5CC177;
+    --shadow:0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.28);
+  }
+
+  *{box-sizing:border-box;}
+  .st-page{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.62; -webkit-font-smoothing:antialiased;
+    padding:clamp(28px,6vw,64px) 20px 72px;
+    min-height:100%;
+  }
+  .st-wrap{max-width:660px;margin:0 auto;}
+
+  /* Header */
+  .st-head{display:flex;align-items:center;gap:18px;}
+  .st-icon{width:66px;height:66px;flex:0 0 auto;border-radius:16px;box-shadow:var(--shadow);}
+  .st-titles h1{margin:0;font-size:clamp(1.7rem,4.5vw,2.15rem);font-weight:700;letter-spacing:-.02em;text-wrap:balance;}
+  .st-titles p{margin:4px 0 0;color:var(--muted);font-size:1.02rem;}
+
+  .st-rule{height:3px;border:0;margin:22px 0 8px;border-radius:3px;
+    background:linear-gradient(90deg,var(--brand),var(--brand-2));opacity:.95;}
+
+  nav.st-nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 30px;}
+  nav.st-nav a{
+    font-size:.86rem;font-weight:600;letter-spacing:.02em;
+    color:var(--link);text-decoration:none;
+    padding:6px 12px;border:1px solid var(--line);border-radius:999px;
+    background:var(--surface);
+  }
+  nav.st-nav a:hover{border-color:var(--brand);}
+  nav.st-nav a:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+
+  /* Promise callout */
+  .st-promise{
+    display:flex;align-items:center;gap:16px;
+    background:var(--promise-bg);border:1px solid var(--promise-line);
+    border-radius:14px;padding:18px 20px;margin:0 0 38px;
+  }
+  .st-dots{display:flex;gap:7px;flex:0 0 auto;}
+  .st-dots span{width:13px;height:13px;border-radius:50%;display:block;}
+  .st-promise strong{font-size:1.05rem;font-weight:700;letter-spacing:-.01em;}
+  .st-promise em{display:block;font-style:normal;color:var(--muted);font-size:.95rem;margin-top:2px;}
+
+  /* Sections */
+  section{margin:0 0 44px;}
+  .eyebrow{
+    font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--brand);margin:0 0 6px;
+  }
+  section h2{margin:0 0 14px;font-size:1.5rem;font-weight:700;letter-spacing:-.015em;text-wrap:balance;}
+  section h3{margin:26px 0 8px;font-size:1.02rem;font-weight:700;}
+  p{margin:0 0 14px;}
+  .updated{color:var(--muted);font-size:.9rem;margin:-6px 0 20px;}
+
+  ul.st-list{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:11px;}
+  ul.st-list li{position:relative;padding-left:30px;}
+  ul.st-list li::before{
+    content:"";position:absolute;left:2px;top:.55em;
+    width:9px;height:9px;border-radius:2px;background:var(--brand);
+  }
+  ul.st-list li b{font-weight:700;}
+
+  a.mail{color:var(--link);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line);}
+  a.mail:hover{border-color:var(--brand);}
+  a.mail:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:2px;}
+
+  /* Buy Me a Coffee */
+  .st-coffee{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    background:var(--promise-bg);border:1px solid var(--promise-line);
+    border-radius:14px;padding:20px 22px;margin:0 0 8px;
+  }
+  .st-coffee .copy{flex:1 1 240px;}
+  .st-coffee .copy strong{display:block;font-size:1.05rem;font-weight:700;letter-spacing:-.01em;}
+  .st-coffee .copy em{display:block;font-style:normal;color:var(--muted);font-size:.95rem;margin-top:3px;}
+  a.st-coffee-btn{
+    display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;
+    font-size:.95rem;font-weight:700;letter-spacing:.01em;text-decoration:none;
+    color:#3A2A12;background:var(--amber);
+    padding:11px 18px;border-radius:999px;
+    box-shadow:0 1px 2px rgba(16,51,44,.12);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  a.st-coffee-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(244,176,42,.4);}
+  a.st-coffee-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+  a.st-coffee-btn svg{width:18px;height:18px;display:block;}
+
+  .st-foot{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.88rem;
+    display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;}
+</style>
+
+<div class="st-page">
+  <div class="st-wrap">
+
+    <header class="st-head">
+      <svg class="st-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MedTrack icon: a capsule on a teal-green rounded square">
+        <defs><linearGradient id="mtg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3FA98F"/><stop offset="1" stop-color="#2E7D6B"/>
+        </linearGradient></defs>
+        <rect x="0" y="0" width="100" height="100" rx="22" fill="url(#mtg)"/>
+        <g transform="rotate(-45 50 50)">
+          <rect x="27" y="38" width="46" height="24" rx="12" fill="#FFFFFF"/>
+          <path d="M50 38h11a12 12 0 0 1 0 24H50z" fill="#BFEBDF"/>
+          <line x1="50" y1="38" x2="50" y2="62" stroke="#2E7D6B" stroke-width="1.6" opacity=".55"/>
+        </g>
+      </svg>
+      <div class="st-titles">
+        <h1>MedTrack</h1>
+        <p>A private, on-device medication tracker for iPhone and iPad.</p>
+      </div>
+    </header>
+
+    <hr class="st-rule"/>
+    <nav class="st-nav" aria-label="Sections">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#support">Support</a>
+      <a href="#coffee">Buy Me a Coffee</a>
+    </nav>
+
+    <div class="st-promise">
+      <span class="st-dots" aria-hidden="true">
+        <span style="background:var(--red)"></span>
+        <span style="background:var(--amber)"></span>
+        <span style="background:var(--green)"></span>
+      </span>
+      <span>
+        <strong>No account. No cloud. Nothing leaves your device.</strong>
+        <em>Your medication record stays on your phone &mdash; always.</em>
+      </span>
+    </div>
+
+    <section id="privacy">
+      <p class="eyebrow">Your privacy</p>
+      <h2>Privacy Policy</h2>
+      <p class="updated">Last updated: 15 September 2026</p>
+      <p>MedTrack is a private, on-device app. It does not collect, transmit, or share any personal data.</p>
+      <ul class="st-list">
+        <li><b>No account.</b> MedTrack has no login, and there is no user account to create.</li>
+        <li><b>No servers.</b> Everything you enter stays on your device. Nothing is uploaded, and the app does not connect to the internet.</li>
+        <li><b>No analytics or tracking.</b> MedTrack uses no analytics, advertising, or third-party tracking.</li>
+        <li><b>Your data.</b> The medications, schedules, doses, and supply counts you record are stored only on your device. You can create an encrypted backup that you control, and erase your data at any time by deleting the app.</li>
+        <li><b>Encrypted backups.</b> A backup is a single file, protected by a passphrase only you know. Without that passphrase, no one &mdash; including us &mdash; can open it.</li>
+      </ul>
+      <p><b>A personal aid, not a medical record.</b> MedTrack helps you keep track of your own medications and reminders. It does not replace your doctor or pharmacist, and it is not an official health record. Because MedTrack keeps everything on your device and stores nothing anywhere else, uninstalling the app or erasing your device without a backup will permanently remove your data.</p>
+      <p>Because MedTrack does not collect data, there is nothing for us to access, sell, or disclose.</p>
+    </section>
+
+    <section id="support">
+      <p class="eyebrow">Help &amp; contact</p>
+      <h2>Support</h2>
+      <p>MedTrack is a private, on-device medication tracker. Add your medications, set the times you take them, and tap to log each dose on the day view or month calendar. Everything stays on your device.</p>
+
+      <h3>Common questions</h3>
+      <ul class="st-list">
+        <li><b>Log a dose.</b> On the Today screen, tap a dose to cycle through Taken, Skipped, and back. As-needed (PRN) doses are logged with the &ldquo;+&rdquo; button.</li>
+        <li><b>Reminders.</b> Each medication can have its own reminder times. Allow notifications when the app asks, and MedTrack will remind you at each scheduled time.</li>
+        <li><b>Supply &amp; refills.</b> MedTrack counts down your supply as you log doses and flags a medication when it&rsquo;s running low; use Refill on the medication to set a new count.</li>
+        <li><b>Back up or restore.</b> In Settings, create a passphrase-encrypted backup file you can keep safe and restore later. Keep the passphrase somewhere secure &mdash; it cannot be recovered.</li>
+        <li><b>Works offline.</b> MedTrack never needs a connection &mdash; nothing is uploaded.</li>
+      </ul>
+
+      <h3>Questions or feedback</h3>
+      <p>Email <a class="mail" href="mailto:SkillTrack101@gmail.com">SkillTrack101@gmail.com</a> and we&rsquo;ll be glad to help.</p>
+    </section>
+
+    <section id="coffee">
+      <p class="eyebrow">Support development</p>
+      <h2>Buy Me a Coffee</h2>
+      <p>MedTrack is built and maintained by one person, with no ads, no accounts, and no data collection. If it helps you stay on top of your medications, a small tip keeps it growing &mdash; entirely optional, and always appreciated.</p>
+      <div class="st-coffee">
+        <span class="copy">
+          <strong>Enjoying MedTrack?</strong>
+          <em>A coffee helps fund future updates.</em>
+        </span>
+        <a class="st-coffee-btn" href="https://buymeacoffee.com/DougWiebe" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M17 9h2.5a2.5 2.5 0 0 1 0 5H17" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8 2.5c-.6.8-.6 1.7 0 2.5M11.5 2.5c-.6.8-.6 1.7 0 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          Buy Me a Coffee
+        </a>
+      </div>
+    </section>
+
+    <footer class="st-foot">
+      <span>© 2026 Douglas Wiebe</span>
+      <span><a class="mail" href="mailto:SkillTrack101@gmail.com">SkillTrack101@gmail.com</a></span>
+    </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
