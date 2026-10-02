@@ -6,6 +6,9 @@ The initial build is complete. **One item is pending:**
   2026-10-02; live build is 1.0.2 (4). Do **not** publish earlier — the site would describe features users cannot
   get yet. Drop-in wording is in [`SITE_UPDATE_1.1.md`](SITE_UPDATE_1.1.md). Apply it to `docs/index.html`, commit,
   push to `main`.
+  **Already prepared** on local branch `release-1.1-site` (commit `7172e6d`, not pushed): `docs/index.html` 1.1
+  wording + Walkthrough link, and `docs/walkthrough.html` (fonts embedded, no third-party requests). When 1.1.0 is
+  approved and released: `git checkout main && git merge release-1.1-site && git push origin main`.
 
 ## What shipped
 
