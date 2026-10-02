@@ -1,6 +1,11 @@
-# MedTrack_Site — DONE (2026-09-15)
+# MedTrack_Site — initial build DONE (2026-09-15); one update pending
 
-This handoff is **complete**. Kept as a short record; nothing here is pending.
+The initial build is complete. **One item is pending:**
+
+- **TODO: update the site once App Store 1.1.0 is approved and released.** 1.1.0 (5) was submitted for review
+  2026-10-02; live build is 1.0.2 (4). Do **not** publish earlier — the site would describe features users cannot
+  get yet. Drop-in wording is in [`SITE_UPDATE_1.1.md`](SITE_UPDATE_1.1.md). Apply it to `docs/index.html`, commit,
+  push to `main`.
 
 ## What shipped
 
