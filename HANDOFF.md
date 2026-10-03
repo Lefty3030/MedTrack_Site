@@ -1,14 +1,7 @@
-# MedTrack_Site — initial build DONE (2026-09-15); one update pending
+# MedTrack_Site — initial build DONE (2026-09-15); 1.1 update published (2026-10-03)
 
-The initial build is complete. **One item is pending:**
-
-- **TODO: update the site once App Store 1.1.0 is approved and released.** 1.1.0 (5) was submitted for review
-  2026-10-02; live build is 1.0.2 (4). Do **not** publish earlier — the site would describe features users cannot
-  get yet. Drop-in wording is in [`SITE_UPDATE_1.1.md`](SITE_UPDATE_1.1.md). Apply it to `docs/index.html`, commit,
-  push to `main`.
-  **Already prepared** on local branch `release-1.1-site` (commit `7172e6d`, not pushed): `docs/index.html` 1.1
-  wording + Walkthrough link, and `docs/walkthrough.html` (fonts embedded, no third-party requests). When 1.1.0 is
-  approved and released: `git checkout main && git merge release-1.1-site && git push origin main`.
+The initial build is complete. **1.1 wording published 2026-10-03** (1.1.0 is live on the App Store): index.html
+updated + `docs/walkthrough.html` added. No items pending.
 
 ## What shipped
 
