@@ -1,7 +1,7 @@
 # MedTrack_Site — initial build DONE (2026-09-15); 1.1 update published (2026-10-03)
 
 The initial build is complete. **1.1 wording published 2026-10-03** (1.1.0 is live on the App Store): index.html
-updated + `docs/walkthrough.html` added. **Pending (not yet applied):** swap in the new app icon once 1.1.1 is live — see `SITE_UPDATE_ICON.md` (`prep/apply_icon.py` is ready).
+updated + `docs/walkthrough.html` added. **Pending (not yet applied):** swap in the new app icon once 1.1.1 is live — see `SITE_UPDATE_NEXT.md` (`prep/apply_site_update.py` is ready; also covers padlock, link pills, policy date, App Store button).
 
 ## What shipped
 
