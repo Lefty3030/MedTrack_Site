@@ -15,12 +15,12 @@ Apply **after the 1.1.1 build with the new icon is live on the App Store**, so t
 | 2 | privacy callout | red/amber/green dots (read as a status light, left over from the old logo) | padlock tile in the brand colour (works in light and dark) |
 | 4 | section link pills | thin pale border, easy to miss | 1.5px brand-colour outline, tinted fill on hover |
 | 5 | "Last updated" under Privacy Policy | 15 September 2026 | the date the script is run |
-| 7 | new button above the link pills | none | "Get MedTrack on the App Store" (+ "Free · iPhone and iPad") linking to `https://apps.apple.com/us/app/medtrack/id6812911967` |
+| 7 | new badge above the link pills | none | Apple's official "Download on the App Store" badge (black in light mode, white in dark mode) + "Free · iPhone and iPad", linking to `https://apps.apple.com/us/app/medtrack/id6812911967`; the script copies the two badge SVGs into `docs/` |
 
 Notes:
 - The App Store URL came from Apple's public lookup for bundle `com.dougwiebe.medtrack` (app id 6812911967).
-- The button is plain text styled in the site's colours, **not** Apple's official "Download on the App Store" badge. That badge is
-  Apple artwork with usage rules; download it from Apple's marketing resources and swap it in if you want it.
+- The badge files are Apple's official artwork, downloaded 2026-10-06 from Apple Marketing Tools (`toolbox.marketingtools.apple.com`,
+  English US/UK). Don't recolour or redraw them (Apple's usage rules). Apple says to use the white badge on dark backgrounds, which the page does.
 - The policy date: the privacy wording itself hasn't changed, so only keep #5 if you're happy showing the date of this site update.
 - Item 3 from the review (wrapping nav row) is not included; the nav still wraps "Buy Me a Coffee" onto a second line on phones.
 
@@ -38,7 +38,7 @@ git diff --stat                       # expect only those two files
 ```
 The script stops without writing if a pattern doesn't match (it expects exactly one match for each index.html edit and three walkthrough logos), so
 if the pages were edited in the meantime it fails loudly instead of half-applying. Tested 2026-10-06 against copies of
-the current pages (all replacements matched); the edited copy was viewed at phone width in light and dark mode. The real
+the current pages (all replacements matched); the edited copy was viewed at phone width in light and dark mode (including the badge swap). The real
 `docs/` was not touched.
 
 Then: open `docs/index.html` in a browser (light and dark mode) and check the header icon and tab favicon; open
@@ -47,4 +47,5 @@ minute or two. Hard-refresh the live site (favicons cache hard).
 
 ## Files
 - `prep/icon.svg` — the rounded-square icon artwork used by the script.
+- `prep/app-store-badge-black.svg`, `prep/app-store-badge-white.svg` — Apple's official badges, copied into `docs/` when the script runs.
 - `prep/apply_site_update.py` — the one-shot updater described above.

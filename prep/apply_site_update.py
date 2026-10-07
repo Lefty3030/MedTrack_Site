@@ -73,10 +73,15 @@ s = once(s, """  .st-dots{display:flex;gap:7px;flex:0 0 auto;}
     background:var(--surface);border:1px solid var(--promise-line);color:var(--brand);}
   .st-lock svg{width:24px;height:24px;}
   .st-cta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:16px 0 4px;}
-  .st-store{font-size:.95rem;font-weight:700;text-decoration:none;background:var(--brand);color:var(--bg);
-    padding:10px 20px;border-radius:999px;}
-  .st-store:hover{background:var(--brand-2);}
-  .st-store:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+  .st-badge{display:inline-block;line-height:0;border-radius:8px;}
+  .st-badge img{height:44px;width:auto;display:block;}
+  .st-badge .on-dark{display:none;}
+  @media (prefers-color-scheme:dark){.st-badge .on-light{display:none;}.st-badge .on-dark{display:block;}}
+  :root[data-theme="light"] .st-badge .on-light{display:block;}
+  :root[data-theme="light"] .st-badge .on-dark{display:none;}
+  :root[data-theme="dark"] .st-badge .on-light{display:none;}
+  :root[data-theme="dark"] .st-badge .on-dark{display:block;}
+  .st-badge:focus-visible{outline:2px solid var(--brand);outline-offset:3px;}
   .st-cta span{color:var(--muted);font-size:.9rem;}
 """, "dots css -> lock + button css")
 s = once(s, """      <span class="st-dots" aria-hidden="true">
@@ -90,7 +95,7 @@ s = once(s, """      <span class="st-dots" aria-hidden="true">
 
 # #7 App Store button (above the section links)
 s = once(s, '    <nav class="st-nav" aria-label="Sections">',
-f"""    <p class="st-cta"><a class="st-store" href="{APP_STORE_URL}">Get MedTrack on the App Store</a><span>Free &middot; iPhone and iPad</span></p>
+f"""    <p class="st-cta"><a class="st-badge" href="{APP_STORE_URL}" aria-label="Download MedTrack on the App Store"><img class="on-light" src="app-store-badge-black.svg" alt="Download on the App Store" width="132" height="44"><img class="on-dark" src="app-store-badge-white.svg" alt="" width="132" height="44"></a><span>Free &middot; iPhone and iPad</span></p>
     <nav class="st-nav" aria-label="Sections">""", "App Store button")
 
 # #5 policy date
@@ -115,4 +120,7 @@ out[p2] = w
 for path, text in out.items():
     if write:
         path.write_text(text); print("wrote", path.relative_to(root))
+if write:
+    for name in ("app-store-badge-black.svg", "app-store-badge-white.svg"):
+        (root / "docs" / name).write_bytes((root / "prep" / name).read_bytes()); print("copied", name, "-> docs/")
 print("done" if write else "dry run only — re-run with --write to apply")
