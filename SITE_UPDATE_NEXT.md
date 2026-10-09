@@ -1,5 +1,10 @@
 # Site update: new app icon + design fixes (prepared 2026-10-06, apply in a few days)
 
+> **UPDATE 2026-10-08:** the app icon changed again, to a glossy blue alarm clock with capsules (app repo `49a64ef`). The
+> favicon, apple-touch-icon, header icon (`docs/index.html`) and the three `walkthrough.html` logos were already swapped to it
+> by hand. **Do not run `prep/apply_site_update.py` as-is for the icon rows below**: it would overwrite them with the old
+> indigo art (`prep/icon.svg`). The padlock, link-pill, date and App Store badge rows still apply. Push only once the build is live.
+
 The app icon changed from a white/mint capsule on teal to an indigo Bauhaus composition (coral circle, amber half-disc,
 mint capsule, white dot). It ships with MedTrack 1.1.1. Source art: `assets/brand/app_icon.svg` in the app repo.
 
